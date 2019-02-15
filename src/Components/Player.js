@@ -20,11 +20,9 @@ class Player extends Component {
         <div>
           <h3>Choose first player</h3>
           <span className={this.state.selected === "X"? "X" : "white"} onClick={()=> this.setState({selected: "X"})}>X</span>
-          <div className="check"></div>
         </div>
         <div>
           <span className={this.state.selected === "O" ? "O" : "white"} onClick={()=> this.setState({selected: "O"})}>O</span>
-          <div className="check"></div>
         </div>
           <input className="btn" type="submit" value="Start"/>
       </form>
